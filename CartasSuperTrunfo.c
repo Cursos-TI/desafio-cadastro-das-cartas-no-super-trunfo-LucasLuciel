@@ -10,6 +10,7 @@ int main() { // Início da execução do programa.
 */
     int populacao, pontos_turisticos;  
     float area,PIB;
+    float densidade, PIBpC;
     char estado[20], nome[50], codigo[6];
 
 /* Perguntamos ao usuário os respectivos valores da carta e armazenamos os dados inseridos.
@@ -29,7 +30,7 @@ int main() { // Início da execução do programa.
     printf("Sua população\n");
     scanf("%d", &populacao);
 
-    printf("Sua area em km²");
+    printf("Sua area em km²\n");
     scanf("%f", &area);
 
     printf("O seu PIB\n");
@@ -37,6 +38,11 @@ int main() { // Início da execução do programa.
 
     printf("O número de pontos turísticos\n");
     scanf("%d", &pontos_turisticos);
+
+    //Cálculo da densidade populacional e PIB per Capita.
+
+    densidade = (float) populacao / area;
+    PIBpC = (float) PIB / populacao;
 
 // Por último nomeamos e imprimimos os valores inseridos pelo usuário com os dados da carta.
 
@@ -47,6 +53,9 @@ int main() { // Início da execução do programa.
     printf("Área: %f\n", area);
     printf("PIB: %f\n", PIB);
     printf("Número de pontos turísticos: %d\n", pontos_turisticos);
+    printf("Densidade populacional: %.2f\n", densidade);
+    printf("PIB per Capita: %.2f\n", PIBpC);
+
 
     return 0; //Fim do programa
 }
