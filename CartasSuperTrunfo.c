@@ -39,7 +39,7 @@ int main() { // Início da execução do programa.
     printf("O número de pontos turísticos\n");
     scanf("%d", &pontos_turisticos);
 
-    //Cálculo da densidade populacional e PIB per Capita.
+    //Cálculo da Densidade Populacional e PIB per Capita dos valores inseridos.
 
     densidade = (float) populacao / area;
     PIBpC = (float) PIB / populacao;
