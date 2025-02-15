@@ -1,23 +1,15 @@
-#include <stdio.h> //Inclui a biblioteca padrão de entrada e saída.
+#include <stdio.h>
 
-int main() { // Início da execução do programa.
+int main() {
 
- /*A seguir definimos os valores da carta. 
+// Definição das variáveis para armazenar os dados da cidade.
 
- int = valores inteiros, 
- float = valores inteiros e com casas decimais,
- char =  nomes podendo conter numeros e caractéres especiais, [] serve para delimitar a quantidade de caractéres.
-*/
     int populacao, pontos_turisticos;  
-    float area,PIB;
-    float densidade, PIBpC;
+    float area,PIB,densidade, PIBpC;
     char estado[20], nome[50], codigo[6];
 
-/* Perguntamos ao usuário os respectivos valores da carta e armazenamos os dados inseridos.
+// Inserimos os valores da cidade.
 
-   printf = Imprime a mensagem na tela,
-   scanf = Lê os dados inseridos pelo usuário.
-*/
     printf("insira o código da carta\n");
     scanf("%s", codigo);
 
@@ -43,8 +35,8 @@ int main() { // Início da execução do programa.
 
     densidade = (float) populacao / area;
     PIBpC = (float) PIB / populacao;
-
-// Por último nomeamos e imprimimos os valores inseridos pelo usuário com os dados da carta.
+    
+    // Por último exibimos os dados da cidade.
 
     printf("Código da carta: %s\n", codigo);
     printf("Cidade: %s\n", nome);
@@ -57,5 +49,5 @@ int main() { // Início da execução do programa.
     printf("PIB per Capita: %.2f\n", PIBpC);
 
 
-    return 0; //Fim do programa
+    return 0;
 }
