@@ -5,7 +5,8 @@ int main() {
 // Definição das variáveis para armazenar os dados da cidade.
 
     int populacao, pontos_turisticos;  
-    float area,PIB,densidade, PIBpC;
+    long long int PIB;
+    float area,densidade, PIBpC;
     char estado[20], nome[50], codigo[6];
 
 // Inserimos os valores da cidade.
@@ -26,7 +27,7 @@ int main() {
     scanf("%f", &area);
 
     printf("O seu PIB\n");
-    scanf("%f", &PIB);
+    scanf("%lld", &PIB);
 
     printf("O número de pontos turísticos\n");
     scanf("%d", &pontos_turisticos);
@@ -42,8 +43,8 @@ int main() {
     printf("Cidade: %s\n", nome);
     printf("Estado: %s\n", estado);
     printf("População: %d\n", populacao);
-    printf("Área: %f\n", area);
-    printf("PIB: %f\n", PIB);
+    printf("Área: %.2f\n", area);
+    printf("PIB: %lld\n", PIB);
     printf("Número de pontos turísticos: %d\n", pontos_turisticos);
     printf("Densidade populacional: %.2f\n", densidade);
     printf("PIB per Capita: %.2f\n", PIBpC);
